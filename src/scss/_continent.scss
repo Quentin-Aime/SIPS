@@ -1,0 +1,278 @@
+.continent {
+	padding-top: 60px;
+	&-Line {
+		width: 20%;
+		@include for-size(tablet-portrait-up) {
+			width: 10%;
+		}
+		@include for-size(desktop-up) {
+			width: 5%;
+		}
+	}
+	&-Wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include for-size(tablet-portrait-up) {
+			align-items: flex-start;
+		}
+		&-Title {
+			margin-top: -12px;
+			font-family: "Didot", sans-serif;
+			font-size: 20px;
+			padding-bottom: 30px;
+			@include for-size(tablet-portrait-up) {
+				margin-top: -17px;
+				font-size: 30px;
+				padding-left: 11%; 
+			}
+			@include for-size(desktop-up) {
+				margin-top: -20px;
+				font-size: 40px;
+				padding-left: 6%; 
+			}
+		}
+		&-SelectionMobile {
+			width: 60vw;
+			padding: 30px 0;
+			border-radius: 20px;
+			margin-bottom: 50px;
+			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			@include for-size(tablet-portrait-up) {
+				display: none;
+			}
+			&-Text {
+				text-align: center;
+				font-size: 20px;
+				color: #B39F64;
+				font-family: "Montserrat SemiBold", sans sérif;
+			}
+			&-Icon {
+				height: 15px;
+				width: auto;
+			}
+		}
+		&-Selection {
+			display: none;
+			@include for-size(tablet-portrait-up) {
+				display: flex;
+				flex-wrap: wrap;
+				width: 90vw;
+				align-items: center;
+				align-self: center;
+				justify-content: space-around;
+			}
+			margin: 40px;
+			&-Choice {
+				width: 150px;
+				height: 20px;
+				padding: 10px;
+				text-align: center;
+				background-color: white;
+				border-radius: 12px;
+				font-family: "Montserrat SemiBold", sans serif;
+				color: #B39F64;
+				margin-bottom: 15px;
+				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+			}
+		}
+		&-DestinationMobile {
+			position: relative;
+			width: 60vw;
+			height: 60vw;
+			margin-bottom: 50px;
+			@include for-size(tablet-portrait-up) {
+				display: none;
+			}
+			&-Picture {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+			&-Menu {
+				position: absolute;
+				width: 100%;				
+				height: 100%;
+				z-index: 2;
+				display: flex;
+				opacity: 0;
+				flex-direction: column;
+				justify-content: space-around;
+				&:hover {
+					opacity: 1;
+				}
+				&-Item {
+					width: 100%;
+					color: white;
+					text-align: center;
+				}
+			}
+		}
+		&-Destination {
+			display: none;
+			@include for-size(tablet-portrait-up) {
+				align-self: center;
+				width: 90%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			&-Country {
+				width: 10vw;
+				&-Picture {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		&-Article {
+			box-shadow: 43px 23px 86px rgba(0, 0, 0, 0.50);
+			margin: 40px;
+			background-color: white;
+			display: flex;
+			align-items: left;
+			flex-direction: column;
+			@include for-size(tablet-portrait-up) {
+				flex-wrap: wrap;
+				height: 275px;
+			}
+			&-Img {
+				padding-top: 40px;
+				padding-left: 40px;
+				width: 80%;
+				@include for-size(tablet-portrait-up) {
+					width: 240px;
+					height: 200px;
+				}
+			}
+			&-Author {
+				padding-top: 20px;
+				padding-left: 40px;
+				font-family: "Montserrat SemiBold", sans serif;
+				font-size: 20px;
+				width: 100%;
+				@include for-size(tablet-portrait-up) {
+					font-size: 15px;
+					width: 50%;
+					text-align: left;
+					padding: 0px;
+					padding-top: 50px;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+			}
+			&-Opinion {
+				display: flex;
+				flex-direction: row;
+				font-family: "Montserrat SemiBold", sans serif;
+				font-size: 20px;
+				align-items: center;
+				padding-top: 20px;
+				padding-left: 40px;
+				padding-bottom: 20px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 15px;
+					width: 50%;
+					text-align: left;
+					padding: 0px;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+				&-Text {
+
+				}
+				&-Stars {
+					padding-left: 20px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					width: 50%;
+					justify-content: space-between;
+					@include for-size(tablet-portrait-up) {
+						width: 40%;
+					}
+					@include for-size(desktop-up) {
+						width: 30%;
+					}
+					&-Item {
+						height: 20px;
+						width: 20px;
+						&-Full {
+
+						}
+					}
+				}
+			}
+			&-Localisation {
+				font-family: "Montserrat Regular", sans serif;
+				font-size: 18px;
+				padding-left: 40px;
+				padding-bottom: 20px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 13px;
+					width: 40%;
+					padding: 0;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+			}
+			&-Description {
+				font-family: "Montserrat Regular", sans serif;
+				font-size: 15px;
+				padding-left: 40px;
+				padding-bottom: 20px;
+				padding-top: 20px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 13px;
+					width: 40%;
+					padding: 0;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+			}
+			&-More {
+				font-family: "Montserrat Regular", sans serif;
+				font-size: 15px;
+				padding-left: 40px;
+				padding-bottom: 20px;
+				padding-top: 10px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 13px;
+					width: 40%;
+					padding: 0;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+			}
+			&-Hours {
+				font-family: "Montserrat Regular", sans serif;
+				font-size: 15px;
+				padding-left: 40px;
+				padding-bottom: 20px;
+				padding-top: 10px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 13px;
+					width: 40%;
+					padding: 0;
+					padding-top: 10px;
+				}
+				@include for-size(desktop-up) {
+					margin-left: -15vw;
+				}
+			}
+		}
+	}
+}

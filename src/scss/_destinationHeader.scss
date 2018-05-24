@@ -1,0 +1,66 @@
+.destinationHeader {
+	height: 100vh;
+	position: relative;
+	&-BackgroundMobile {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+	&-Background {
+		height: 100%;
+		width: 100%;
+		display: none;
+		position: absolute;
+		@include for-size(tablet-portrait-up) {
+			display: block;
+		}
+	}
+	&-Title {
+		position: absolute;
+		color: white;
+		top: 70%;
+		left: 5%;
+		font-size: 20px;
+		font-family: "Montserrat SemiBold", sans serif;
+		@include for-size(tablet-portrait-up) {
+			left: 40%; 
+		}
+	}
+	&-SubTitle {
+		position: absolute;
+		color: white;
+		font-size: 18px;
+		font-family: "Montserrat SemiBold", sans serif;
+		top: 75%;
+		left: 5%;
+		@include for-size(tablet-portrait-up) {
+			left: 40%; 
+		}
+	}
+	&-Description {
+		position: absolute;
+		color: white;
+		font-size: 15px;
+		font-family: "Montserrat Regular", sans serif;
+		top: 80%;
+		left: 5%;
+		@include for-size(tablet-portrait-up) { 
+			left: 40%; 
+		}
+		@include for-size(desktop-up) {
+			left: 40%;
+			padding-right: 20vw;
+		}
+	}
+	&-Author {
+		position: absolute;
+		color: white;
+		font-size: 18px;
+		font-family: "Montserrat Regular", sans serif;
+		top: 95%;
+		right: 5%;
+	}
+}
