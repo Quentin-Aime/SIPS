@@ -1,0 +1,154 @@
+.article {
+	width: 100%;
+	@include for-size(tablet-landscape-up) {
+	}
+
+	&-Panel {
+		height: 25vh;
+		@include for-size(tablet-portrait-up) {
+			height: 50vh;
+		}
+		@include for-size(tablet-landscape-up) {
+			height: 75vh;
+			padding-bottom: 70px;
+		}
+		&-Title {
+			padding: 20px 0 0 60px;
+			font-family: 'Didot', sans-serif;
+			font-size: 20px;
+			@include for-size(tablet-portrait-up) {
+				padding-top: 40px;
+				font-size: 30px;
+			}
+			@include for-size(tablet-landscape-up) {
+				padding-left: 37vw;
+				padding-top: 125px;
+			}
+			@include for-size(desktop-up) {
+				padding-left: 37vw;
+				padding-top: 175px;
+			}
+
+		}
+		&-Description {
+			display: none;
+			@include for-size(tablet-landscape-up) {
+				display: block;
+				line-height: 25px;
+				width: 21vw;
+				padding: 5vw 0 0 32vw;
+				font-size: 18px;
+			}
+			@include for-size(desktop-up) {
+				display: block;
+				width: 21vw;
+				padding: 8vw 0 0 32vw;
+				font-size: 20px;
+			}
+		}
+		&-More {
+			display: flex;
+			justify-content: flex-end;
+			padding-top: 130px;
+			padding-right: 5vw;
+			align-items: center;
+			@include for-size(tablet-portrait-up) {
+				padding-top: 250px;
+			}
+			@include for-size(tablet-landscape-up) {
+				justify-content: flex-start;
+				padding-top: 90px;
+				padding-right: 0vw;
+				padding-left: 45vw;
+			}
+			&-Text {
+				font-size: 15px;
+				color: #B29E63;
+				padding-right: 15px;
+				@include for-size(tablet-portrait-up) {
+					font-size: 25px;
+				}
+				@include for-size(tablet-landscape-up) {
+
+				}
+			}
+			&-Arrow {
+				height: 24px;
+				width: 24px;
+				@include for-size(tablet-portrait-up) {
+					height: 32px;
+					width: 32px;
+				}
+				@include for-size(tablet-landscape-up) {
+
+				}
+
+			}
+		}
+	}
+}
+
+.london {	
+	background-image: url('../img/london.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include for-size(tablet-landscape-up) {
+		background-image: url('../img/london2.png');
+		background-size: 25vw;
+		background-position: 10vw 5vh;
+	}
+}
+.long-island {
+	background-image: url('../img/longIsland.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include for-size(tablet-landscape-up) {
+		background-image: url('../img/longIsland2.png');
+		background-size: 25vw;
+		background-position: 70vw 5vh;
+	}
+}
+.new-york {
+	background-image: url('../img/NewYork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include for-size(tablet-landscape-up) {
+		background-image: url('../img/NewYork2.png');
+		background-size: 25vw;
+		background-position: 10vw 5vh;
+	}
+}
+
+.mirroredTitle {
+	@include for-size(tablet-landscape-up) {
+		padding-left: 45vw;
+		padding-top: 125px;
+	}
+	@include for-size(desktop-up) {
+		padding-top: 175px;
+	}
+}
+.mirroredDesc {
+	@include for-size(tablet-landscape-up) {
+		display: block;
+		width: 21vw;
+		padding: 5vw 0 0 51.5vw;
+		font-size: 18px;
+		text-align: right;
+	}
+	@include for-size(desktop-up) {
+		padding-top: 8vw;
+		font-size: 20px;
+	}
+}
+.mirroredMore {
+	@include for-size(tablet-landscape-up) {
+		justify-content: flex-start;
+		padding-top: 90px;
+		padding-right: 0vw;
+		padding-left: 53vw;
+	}
+}

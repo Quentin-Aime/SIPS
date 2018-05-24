@@ -1,0 +1,45 @@
+.twitter {
+	display: flex;
+	align-items: center;
+	flex-direction:	column;
+	&-Picture {
+		height: 50px;
+		width: 50px;
+		padding: 50px 0 50px 0;
+	}
+	&-Wrapper {
+		width: 85vw;
+		margin-bottom: 50px;
+		background-color: white;
+		box-shadow: 22px 22px 150px rgba(0, 0, 0, 0.28);
+		&-Head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 30px;
+			&-Img {
+				height: 45px;
+				width: 45px;
+			}
+			&-Name {
+				font-family: 'Montserrat Regular', sans-serif;
+			}
+			&-Hashtag {
+				font-family: 'Montserrat Regular', sans-serif;
+				color: #9B9B9B;
+				font-size: 13px;
+			}
+			&-Time {
+				font-family: 'Montserrat Regular', sans-serif;
+				color: #9B9B9B;
+				font-size: 13px;
+			}
+		}
+		&-Text {
+			padding: 0 15vw 40px 18vw;
+			font-family: 'Montserrat Regular', sans-serif;
+			font-size: 15px;
+		}
+	}
+}
+
