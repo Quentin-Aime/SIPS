@@ -15,8 +15,6 @@
 	src: url("../font/Montserrat/Montserrat-SemiBold.ttf") format("opentype");
 }
 
-body {}
-
 .header {
 	height: 100vh;
 	background-image: url("../img/orlando.png");
@@ -25,7 +23,22 @@ body {}
 	background-size: cover;
 	position: relative;
 	z-index: 1;
-
+	&-Logo {
+		padding-left: 8vw;
+		padding-top: 45px;
+		height: 40px;
+		width: 40px;
+		position: absolute;
+		@include for-size(tablet-portrait-up) {
+			padding-top: 30px;
+			padding-left: 4vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			height: 50px;
+			width: 50px;			
+			padding-top: 25px;
+		}
+	}
 	&-Burger {
 		margin: 6vh 6vw 0 85vw;
 		transform: scale(1.5);
@@ -63,7 +76,7 @@ body {}
 		z-index: 2;
 		height: 40vh;
 		width: 100%;
-		background-color: white;
+		background-color: #898582;
 		transition: all 1s ease-out;
 		margin-top: -50vh;
 		@include for-size(tablet-portrait-up) {
@@ -239,11 +252,10 @@ body {}
 			}
 			display: none;
 			font-family: 'Montserrat SemiBold', sans-serif;
-			color: #B29E63;
 			padding-left: 5vw;
 			padding-top: 5vh;
 			font-size: 15px;
-			color: #B29E63;
+			color: white;
 			@include for-size(tablet-portrait-up) {
 				display: block;
 				color: white;
@@ -260,8 +272,8 @@ body {}
 					padding-top: 5vh;
 					margin-left: 3vw;
 				}
-				padding-left: 0;
-				margin-right: 8vw;
+				//padding-left: 0;
+				//margin-right: 8vw;
 			}
 		}
 	}
@@ -327,6 +339,8 @@ body {}
 		&-ListItems {
 			&:first-child {
 				padding-top: 6vh;
+				padding-left: 0vw;
+				margin-right: 4vw;
 			}
 			display: none;
 			font-family: 'Montserrat SemiBold', sans-serif;
@@ -353,6 +367,11 @@ body {}
 				}
 				padding-left: 0;
 				margin-right: 8vw;
+			}
+			&-Link {
+				text-decoration: none;
+				color: white;
+				cursor: pointer;
 			}
 		}
 	}
