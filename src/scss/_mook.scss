@@ -1,0 +1,216 @@
+.mook {
+  height: 75vh;
+
+  &-Resume {
+    &-Title {
+      font-size: 20px;
+      font-family: 'Didot', serif;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 8vh;
+      @include for-size (tablet-portrait-up) {
+        font-size: 40px;
+        font-weight: lighter;
+        margin: 8vh 0 0 10vw;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    &-Text {
+      background-color: #ffffff;
+      font-size: 14px;
+      font-family: 'Montserrat Regular', serif;
+      margin: 14vh 0 0 35vw;
+      line-height: 1.9;
+      width: 60vw;
+      @include for-size(tablet-portrait-up) {
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 15vh 0 0 15vw;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-Square {
+    border: 2px solid $goldColor;
+    height: 200px;
+    width: 200px;
+    margin: -60vh 0 0 15vw;
+    @include for-size(tablet-portrait-up) {
+      border: 2px solid $goldColor;
+      height: 200px;
+      width: 200px;
+      margin: -42vh 0 0 8vw;
+    }
+  }
+}
+
+.mookSecond {
+  height: 75vh;
+
+  &-Resume {
+    &-Title {
+      font-size: 20px;
+      font-family: 'Didot', serif;
+      font-weight: bold;
+      text-align: center;
+      @include for-size (tablet-portrait-up) {
+        font-size: 40px;
+        font-weight: lighter;
+        margin: 8vh 0 0 10vw;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    &-Text {
+      background-color: #ffffff;
+      font-size: 14px;
+      font-family: 'Montserrat Regular', serif;
+      margin: 14vh 0 0 5vw;
+      line-height: 1.9;
+      width: 60vw;
+      text-align: right;
+      @include for-size(tablet-portrait-up) {
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 15vh 0 0 15vw;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-Square {
+    border: 2px solid $goldColor;
+    height: 200px;
+    width: 200px;
+    margin: -60vh 0 0 45vw;
+    @include for-size(tablet-portrait-up) {
+      border: 2px solid $goldColor;
+      height: 200px;
+      width: 200px;
+      margin: -42vh 0 0 70vw;
+    }
+  }
+}
+
+.mookThird {
+  &-Resume {
+    &-Title {
+      font-size: 20px;
+      font-family: 'Didot', serif;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 8vh;
+      @include for-size (tablet-portrait-up) {
+        font-size: 40px;
+        font-weight: lighter;
+        margin: 8vh 0 0 10vw;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    &-Text {
+      background-color: #ffffff;
+      font-size: 14px;
+      font-family: 'Montserrat Regular', serif;
+      margin: 14vh 0 0 35vw;
+      line-height: 1.9;
+      width: 60vw;
+      @include for-size(tablet-portrait-up) {
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 15vh 0 0 15vw;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-Square {
+    border: 2px solid $goldColor;
+    height: 200px;
+    width: 200px;
+    margin: -65vh 0 0 15vw;
+    @include for-size(tablet-portrait-up) {
+      border: 2px solid $goldColor;
+      height: 200px;
+      width: 200px;
+      margin: -50vh 0 0 8vw;
+    }
+  }
+
+  &-Line {
+    height: 20px;
+    width: 200px;
+    color: $goldColor;
+  }
+}
+
+.team {
+  @include for-size(phone-only) {
+    display: none;
+  }
+  @include for-size(tablet-portrait-up) {
+    margin-top: 60vh;
+    height: 100vh;
+
+    &-Title {
+      font-size: 40px;
+      font-family: 'Montserrat-Regular', serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &-Container {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10vh 0 0 10vw;
+    }
+
+    &-Img {
+      &-1 {
+        margin: 2vh;
+      }
+
+      &-2 {
+        margin: 2vh;
+      }
+
+      &-3 {
+        margin: 2vh;
+      }
+
+      &-4 {
+        margin: 2vh;
+      }
+    }
+
+    &-ContainerText {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10vh 0 0 10vw;
+    }
+
+    &-Text {
+      font-size: 20px;
+      font-family: 'Montserrat-Regular', serif;
+      font-weight: lighter;
+      color: $goldColor;
+    }
+
+    &-ContainerTextSub {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10vh 0 0 10vw;
+    }
+
+    &-TextSub {
+      font-size: 20px;
+      font-family: 'Montserrat-Regular', serif;
+      font-weight: lighter;
+    }
+  }
+}

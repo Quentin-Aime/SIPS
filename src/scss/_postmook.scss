@@ -1,0 +1,91 @@
+.postmook{
+  margin-bottom: 20vh;
+  &-Ulule{
+  margin-top: 50vh;
+  margin-left: 10vw;
+  width: 80vw;
+
+  &-Title {
+    font-size: 20px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+  }
+  &-Text{
+    margin-top: 4vh;
+    font-size: 16px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+    text-align: center;
+  }
+  }
+ &-Partners{
+   margin-top: 20vh;
+   &-Title{
+     font-size: 30px;
+     font-family: 'Montserrat-Regular', sans-serif;
+     font-weight: lighter;
+     text-align: center;
+   }
+   &-Content{
+     margin-top: 15vh;
+     &-Title{
+       margin-bottom: 4vh;
+       font-size: 20px;
+       font-family: 'Montserrat-Regular', sans-serif;
+       font-weight: lighter;
+       text-align: center;
+     }
+     &-Img{
+       float: right;
+       margin: -9vh 20vw;
+       height: 10%;
+       @include for-size (tablet-portrait-up) {
+         margin: -8vh 35vw;
+       }
+     }
+     &-Members{
+       color: $goldColor;
+       font-size: 18px;
+       font-family: 'Montserrat-Regular', sans-serif;
+       margin: 10vh 0 0 20vw;
+         @include for-size (tablet-portrait-up) {
+           margin: 10vh 0 0 10vw;
+           font-size: 20px;
+         }
+
+     }
+     &-Country {
+       color: $goldColor;
+       font-size: 18px;
+       font-family: 'Montserrat-Regular', sans-serif;
+       margin: 2vh 0 0 20vw;
+       @include for-size (tablet-portrait-up) {
+         margin: 5vh 0 0 10vw;
+         font-size: 20px;
+       }
+     }
+     &-Passenger{
+       color: $goldColor;
+       font-size: 18px;
+       font-family: 'Montserrat-Regular', sans-serif;
+       margin: 2vh 0 0 20vw;
+       @include for-size (tablet-portrait-up) {
+         margin: 5vh 0 0 10vw;
+         font-size: 20px;
+       }
+     }
+     &-Description{
+       font-size: 16px;
+       font-family: 'Montserrat-Regular', sans-serif;
+       margin: 2vh 0 0 20vw;
+       line-height: 1.6;
+       @include for-size (tablet-portrait-up) {
+         width: 50vw;
+         margin: -15vh 0 0 35vw;
+       }
+     }
+   }
+ }
+}
