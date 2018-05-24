@@ -1,0 +1,38 @@
+.tops {
+  height: 100vh;
+
+  &-Onglets {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+
+    &-Item {
+      padding: 1vh 1vw;
+      display: block;
+      border: 1.5px solid $goldColor;
+      border-radius: 5px;
+      width: 20vw;
+      text-align: center;
+    }
+  }
+
+  &-Container {
+    width: 80vw;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-top: 10vh;
+
+    &-Items > p {
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      font-size: 20px;
+      font-family: 'Montserrat-Regular', sans-serif;
+    }
+    &-Items > img {
+      width: 60%;
+    }
+  }
+}
