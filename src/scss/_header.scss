@@ -15,16 +15,17 @@
 	src: url("../font/Montserrat/Montserrat-SemiBold.ttf") format("opentype");
 }
 
-body {
-}
+body {}
 
 .header {
-	background-image: url('../img/orlando-brooke-425487-unsplash@2x.png');
+	height: 100vh;
+	background-image: url("../img/orlando.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
 	position: relative;
+	z-index: 1;
+
 	&-Burger {
 		margin: 6vh 6vw 0 85vw;
 		transform: scale(1.5);
@@ -34,6 +35,7 @@ body {
 			display: none;
 		}
 	}
+
 	&-Title {
 		position: absolute;
 		color: white;
@@ -55,6 +57,7 @@ body {
 			font-size: 3.2vw;
 		}
 	}
+
 	&-ListContainer {
 		position: absolute;
 		z-index: 2;
@@ -71,8 +74,7 @@ body {
 			justify-content: flex-end;
 			background-color: transparent;
 		}
-		@include for-size(tablet-landscape-up) {
-		}
+
 		&-ListItems {
 			&:first-child {
 				padding-top: 6vh;
@@ -84,27 +86,368 @@ body {
 			padding-top: 5vh;
 			font-size: 15px;
 			color: #B29E63;
-
 			@include for-size(tablet-portrait-up) {
 				display: block;
 				color: white;
+
 				&:first-child {
 					padding-top: 5vh;
 				}
-				padding-left: 0vw;
-				margin-right: 6vw;
+				margin-right: 4vw;
 			}
-
 			@include for-size(tablet-landscape-up) {
 				display: block;
+
 				&:first-child {
 					padding-top: 5vh;
 					margin-left: 3vw;
 				}
-				padding-left: 0vw;
-				margin-right: 6vw;
+				padding-left: 0;
+				margin-right: 8vw;
 			}
 		}
 	}
+}
+//   INDEX 2
+.headerMag {
+	background-image: url("../img/imagefond.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
 
+	&-MainItemImg {
+		position: absolute;
+		width: 130px;
+		height: 184px;
+		margin: 25vh 0 0 15vw;
+		z-index: 2;
+		@include for-size(tablet-portrait-up){
+			top: 30vh;
+			margin: 0 0 0 18vw;
+			opacity: 1;
+			z-index: 2;
+			position: inherit;
+			width: 195px;
+			height: 276px;
+		}
+	}
+
+	&-GreyItem {
+		margin: 35vh 0 0 25vw;
+		position: absolute;
+		height: 333;
+		width: 275;
+		background-color: rgba(155,155,155, 0.8);
+		@include for-size(tablet-portrait-up) {
+			height: 45vh;
+			width: 70vw;
+			margin-left: 15vw;
+			bottom: 30vh;
+		}
+
+
+		&-Title {
+			font-size: 20px;
+			color: #ffffff;
+			font-weight: bold;
+			font-family: 'Didot', serif;
+			 margin: 5vh 0 0 22vw;
+			 @include for-size(tablet-portrait-up){
+				 position: absolute;
+				 font-size: 30px;
+				 color: #ffffff;
+				 font-family: 'Montserrat', sans-serif;
+				 font-weight: lighter;
+				 margin: 5vh 0 0 20vw;
+			 }
+		}
+
+		&-Text {
+			font-size: 16px;
+			color: #ffffff;
+			font-family: 'Montserrat-Regular', serif;
+			margin: 2.4vh 0 0 8vw;
+			line-height: 1.5;
+			@include for-size(tablet-portrait-up){
+				position: absolute;
+				font-size: 22px;
+				color: #ffffff;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: lighter;
+				margin: 12vh 0 0 20vw;
+			}
+
+
+		}
+	}
+
+	&-Burger {
+		margin: 6vh 6vw 0 85vw;
+		transform: scale(1.5);
+		position: absolute;
+		z-index: 3;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+
+	&-Title {
+		position: absolute;
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Montserrat Regular', sans-serif;
+		top: 25vh;
+		left: 15vw;
+		z-index: 1;
+		word-spacing: 5px;
+		@include for-size(tablet-portrait-up) {
+			top: 40vh;
+			left: 10vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			top: 38vh;
+			left: 25vw;
+			font-size: 3.2vw;
+		}
+	}
+
+	&-ListContainer {
+		position: absolute;
+		z-index: 2;
+		height: 40vh;
+		width: 100%;
+		background-color: white;
+		transition: all 1s ease-out;
+		margin-top: -50vh;
+		@include for-size(tablet-portrait-up) {
+			transition: unset;
+			display: flex;
+			margin-top: 0;
+			left: 0;
+			justify-content: flex-end;
+			background-color: transparent;
+		}
+		@include for-size(tablet-landscape-up) {}
+
+		&-ListItems {
+			&:first-child {
+				padding-top: 6vh;
+			}
+			display: none;
+			font-family: 'Montserrat SemiBold', sans-serif;
+			color: #B29E63;
+			padding-left: 5vw;
+			padding-top: 5vh;
+			font-size: 15px;
+			color: #B29E63;
+			@include for-size(tablet-portrait-up) {
+				display: block;
+				color: white;
+
+				&:first-child {
+					padding-top: 5vh;
+				}
+				margin-right: 4vw;
+			}
+			@include for-size(tablet-landscape-up) {
+				display: block;
+
+				&:first-child {
+					padding-top: 5vh;
+					margin-left: 3vw;
+				}
+				padding-left: 0;
+				margin-right: 8vw;
+			}
+		}
+	}
+}
+
+// INDEX 3
+.headerContact {
+	background-color: $goldColor;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	&-Burger {
+		margin: 6vh 6vw 0 85vw;
+		transform: scale(1.5);
+		position: absolute;
+		z-index: 3;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+
+	&-Title {
+		position: absolute;
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Montserrat Regular', sans-serif;
+		top: 25vh;
+		left: 15vw;
+		z-index: 1;
+		word-spacing: 5px;
+		@include for-size(tablet-portrait-up) {
+			top: 40vh;
+			left: 10vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			top: 38vh;
+			left: 25vw;
+			font-size: 3.2vw;
+		}
+	}
+
+	&-ListContainer {
+		position: absolute;
+		z-index: 2;
+		height: 40vh;
+		width: 100%;
+		background-color: white;
+		transition: all 1s ease-out;
+		margin-top: -50vh;
+		@include for-size(tablet-portrait-up) {
+			transition: unset;
+			display: flex;
+			margin-top: 0;
+			left: 0;
+			justify-content: flex-end;
+			background-color: transparent;
+		}
+
+		&-ListItems {
+			&:first-child {
+				padding-top: 6vh;
+			}
+			display: none;
+			font-family: 'Montserrat SemiBold', sans-serif;
+			color: #B29E63;
+			padding-left: 5vw;
+			padding-top: 5vh;
+			font-size: 15px;
+			color: #B29E63;
+			@include for-size(tablet-portrait-up) {
+				display: block;
+				color: white;
+
+				&:first-child {
+					padding-top: 5vh;
+				}
+				margin-right: 4vw;
+			}
+			@include for-size(tablet-landscape-up) {
+				display: block;
+
+				&:first-child {
+					padding-top: 5vh;
+					margin-left: 3vw;
+				}
+				padding-left: 0;
+				margin-right: 8vw;
+			}
+		}
+	}
+}
+
+// INDEX 4
+
+.headerTops {
+	height: 100vh;
+	background-image: url("../img/ricardo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+
+	&-Burger {
+		margin: 6vh 6vw 0 85vw;
+		transform: scale(1.5);
+		position: absolute;
+		z-index: 3;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+
+	&-Title {
+		position: absolute;
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Montserrat Regular', sans-serif;
+		top: 25vh;
+		left: 15vw;
+		z-index: 1;
+		word-spacing: 5px;
+		@include for-size(tablet-portrait-up) {
+			top: 40vh;
+			left: 10vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			top: 38vh;
+			left: 25vw;
+			font-size: 3.2vw;
+		}
+	}
+
+	&-ListContainer {
+		position: absolute;
+		z-index: 2;
+		height: 40vh;
+		width: 100%;
+		background-color: white;
+		transition: all 1s ease-out;
+		margin-top: -50vh;
+		@include for-size(tablet-portrait-up) {
+			transition: unset;
+			display: flex;
+			margin-top: 0;
+			left: 0;
+			justify-content: flex-end;
+			background-color: transparent;
+		}
+
+		&-ListItems {
+			&:first-child {
+				padding-top: 6vh;
+			}
+			display: none;
+			font-family: 'Montserrat SemiBold', sans-serif;
+			color: #B29E63;
+			padding-left: 5vw;
+			padding-top: 5vh;
+			font-size: 15px;
+			color: #B29E63;
+			@include for-size(tablet-portrait-up) {
+				display: block;
+				color: white;
+
+				&:first-child {
+					padding-top: 5vh;
+				}
+				margin-right: 4vw;
+			}
+			@include for-size(tablet-landscape-up) {
+				display: block;
+
+				&:first-child {
+					padding-top: 5vh;
+					margin-left: 3vw;
+				}
+				padding-left: 0;
+				margin-right: 8vw;
+			}
+		}
+	}
 }
