@@ -18,11 +18,11 @@
 body {}
 
 .header {
-	background-image: url("../img/orlando-brooke-425487-unsplash@2x.png");
+	height: 100vh;
+	background-image: url("../img/orlando.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
 	position: relative;
 	z-index: 1;
 
@@ -108,7 +108,7 @@ body {}
 		}
 	}
 }
-
+//   INDEX 2
 .headerMag {
 	background-image: url("../img/imagefond.png");
 	background-position: center;
@@ -232,6 +232,191 @@ body {}
 			background-color: transparent;
 		}
 		@include for-size(tablet-landscape-up) {}
+
+		&-ListItems {
+			&:first-child {
+				padding-top: 6vh;
+			}
+			display: none;
+			font-family: 'Montserrat SemiBold', sans-serif;
+			color: #B29E63;
+			padding-left: 5vw;
+			padding-top: 5vh;
+			font-size: 15px;
+			color: #B29E63;
+			@include for-size(tablet-portrait-up) {
+				display: block;
+				color: white;
+
+				&:first-child {
+					padding-top: 5vh;
+				}
+				margin-right: 4vw;
+			}
+			@include for-size(tablet-landscape-up) {
+				display: block;
+
+				&:first-child {
+					padding-top: 5vh;
+					margin-left: 3vw;
+				}
+				padding-left: 0;
+				margin-right: 8vw;
+			}
+		}
+	}
+}
+
+// INDEX 3
+.headerContact {
+	background-color: $goldColor;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	&-Burger {
+		margin: 6vh 6vw 0 85vw;
+		transform: scale(1.5);
+		position: absolute;
+		z-index: 3;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+
+	&-Title {
+		position: absolute;
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Montserrat Regular', sans-serif;
+		top: 25vh;
+		left: 15vw;
+		z-index: 1;
+		word-spacing: 5px;
+		@include for-size(tablet-portrait-up) {
+			top: 40vh;
+			left: 10vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			top: 38vh;
+			left: 25vw;
+			font-size: 3.2vw;
+		}
+	}
+
+	&-ListContainer {
+		position: absolute;
+		z-index: 2;
+		height: 40vh;
+		width: 100%;
+		background-color: white;
+		transition: all 1s ease-out;
+		margin-top: -50vh;
+		@include for-size(tablet-portrait-up) {
+			transition: unset;
+			display: flex;
+			margin-top: 0;
+			left: 0;
+			justify-content: flex-end;
+			background-color: transparent;
+		}
+
+		&-ListItems {
+			&:first-child {
+				padding-top: 6vh;
+			}
+			display: none;
+			font-family: 'Montserrat SemiBold', sans-serif;
+			color: #B29E63;
+			padding-left: 5vw;
+			padding-top: 5vh;
+			font-size: 15px;
+			color: #B29E63;
+			@include for-size(tablet-portrait-up) {
+				display: block;
+				color: white;
+
+				&:first-child {
+					padding-top: 5vh;
+				}
+				margin-right: 4vw;
+			}
+			@include for-size(tablet-landscape-up) {
+				display: block;
+
+				&:first-child {
+					padding-top: 5vh;
+					margin-left: 3vw;
+				}
+				padding-left: 0;
+				margin-right: 8vw;
+			}
+		}
+	}
+}
+
+// INDEX 4
+
+.header {
+	height: 100vh;
+	background-image: url("../img/ricardo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+
+	&-Burger {
+		margin: 6vh 6vw 0 85vw;
+		transform: scale(1.5);
+		position: absolute;
+		z-index: 3;
+		@include for-size(tablet-portrait-up) {
+			display: none;
+		}
+	}
+
+	&-Title {
+		position: absolute;
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Montserrat Regular', sans-serif;
+		top: 25vh;
+		left: 15vw;
+		z-index: 1;
+		word-spacing: 5px;
+		@include for-size(tablet-portrait-up) {
+			top: 40vh;
+			left: 10vw;
+		}
+		@include for-size(tablet-landscape-up) {
+			top: 38vh;
+			left: 25vw;
+			font-size: 3.2vw;
+		}
+	}
+
+	&-ListContainer {
+		position: absolute;
+		z-index: 2;
+		height: 40vh;
+		width: 100%;
+		background-color: white;
+		transition: all 1s ease-out;
+		margin-top: -50vh;
+		@include for-size(tablet-portrait-up) {
+			transition: unset;
+			display: flex;
+			margin-top: 0;
+			left: 0;
+			justify-content: flex-end;
+			background-color: transparent;
+		}
 
 		&-ListItems {
 			&:first-child {

@@ -1,0 +1,43 @@
+.main {
+  &-Title {
+    padding: 20vh 0 0 20vw;
+    font-size: 30px;
+    font-family: 'Didot', serif;
+    font-weight: bold;
+
+  }
+  &-Text1{
+    padding: 10vh 0 0 20vw;
+    font-size: 20px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+  }
+  &-Text{
+    padding: 4vh 0 0 20vw;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: lighter;
+
+  }
+  &-Form{
+    margin: -62vh 0 0 50vw;
+    display: flex;
+    flex-direction: column;
+
+    &-Input {
+      padding-top: 6vh;
+      width: 30vw;
+      }
+      &-Input > select ,input{
+        background-color: $goldColor;
+        padding-top: 2vh;
+        width: 30vw;
+        border: 3px solid #ffffff;
+        border-radius: 2px;
+        }
+    }
+
+}
