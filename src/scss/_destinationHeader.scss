@@ -28,6 +28,10 @@
 		@include for-size(tablet-portrait-up) {
 			left: 40%; 
 		}
+		@include for-size(desktop-up) {
+			left: 60%;
+		}
+
 	}
 	&-SubTitle {
 		position: absolute;
@@ -38,6 +42,9 @@
 		left: 5%;
 		@include for-size(tablet-portrait-up) {
 			left: 40%; 
+		}
+		@include for-size(desktop-up) {
+			left: 60%;
 		}
 	}
 	&-Description {
@@ -51,8 +58,8 @@
 			left: 40%; 
 		}
 		@include for-size(desktop-up) {
-			left: 40%;
-			padding-right: 20vw;
+			left: 60%;
+			padding-right: 5vw;
 		}
 	}
 	&-Author {
