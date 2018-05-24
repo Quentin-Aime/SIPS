@@ -1,0 +1,58 @@
+.footer {
+	background-color: #EEE;
+	&-Wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10vw;
+		@include for-size(desktop-up) {
+			padding-top: 2vw;
+			padding-bottom: 5vw;
+		}
+		&-ListLink {
+			display: flex;
+			flex-direction: column;
+			&-Item {
+				color: #B29E63;
+				padding-bottom: 40px;
+				font-size: 20px;
+				font-family: 'Montserrat Regular', sans serif;
+				
+			}
+		}
+		&-ListMedia {
+			display: flex;
+			flex-direction: column;
+			&-Item {
+				padding-bottom: 30px;
+				height: 40px;
+				width: 40px;
+			}
+		}
+	}
+	&-Partner {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 10vw;
+		margin-top: -80px;	
+		@include for-size(desktop-up) {
+		}
+		padding-bottom: 20px;
+		&-Item {
+			height: 60px;
+			width: 60px;
+		}
+	}
+}
+
+.adp {
+	height: 120px;
+	width: 120px;
+}
+.fujifilm {
+	height: 120px;
+	width: 120px;
+}
+.nikon {
+}

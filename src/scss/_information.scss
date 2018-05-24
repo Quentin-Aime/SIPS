@@ -1,0 +1,31 @@
+.information {
+	display: none;
+	@include for-size(tablet-portrait-up) {
+		display: block;
+		padding-top: 70px;
+	}
+	@include for-size(tablet-landscape-up) {
+		padding-top: 0px;
+	}
+	&-Wrapper {
+		width: 90vw;
+		margin-left: 5vw;
+		border: 2px solid #B39F64;
+		display: flex;
+		justify-content: space-between;
+		&-Item {
+			padding: 45px 5vw 25px 5vw;
+			color: #B39F64;
+			font-family: "Montserrat Regular", sans serif;
+			&-Number {
+				font-size: 25px;
+				padding-bottom: 30px;
+				text-align: center;
+			}
+			&-Text {
+				width: 50%;
+				text-align: left;
+			}
+		}
+	}
+}

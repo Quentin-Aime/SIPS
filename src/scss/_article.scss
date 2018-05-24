@@ -36,13 +36,13 @@
 				display: block;
 				line-height: 25px;
 				width: 21vw;
-				padding: 5vw 0 0 32vw;
+				padding: 5vw 0 0 37vw;
 				font-size: 18px;
 			}
 			@include for-size(desktop-up) {
 				display: block;
 				width: 21vw;
-				padding: 8vw 0 0 32vw;
+				padding: 8vw 0 0 37vw;
 				font-size: 20px;
 			}
 		}
@@ -124,7 +124,9 @@
 
 .mirroredTitle {
 	@include for-size(tablet-landscape-up) {
-		padding-left: 45vw;
+		text-align: right;
+		padding-left: 0vw;
+		padding-right: 35vw;
 		padding-top: 125px;
 	}
 	@include for-size(desktop-up) {
@@ -135,7 +137,7 @@
 	@include for-size(tablet-landscape-up) {
 		display: block;
 		width: 21vw;
-		padding: 5vw 0 0 51.5vw;
+		padding: 5vw 0 0 45vw;
 		font-size: 18px;
 		text-align: right;
 	}

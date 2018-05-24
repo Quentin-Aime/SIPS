@@ -91,7 +91,8 @@ body {
 				&:first-child {
 					padding-top: 5vh;
 				}
-				margin-right: 4vw;
+				padding-left: 0vw;
+				margin-right: 6vw;
 			}
 
 			@include for-size(tablet-landscape-up) {
@@ -101,7 +102,7 @@ body {
 					margin-left: 3vw;
 				}
 				padding-left: 0vw;
-				margin-right: 8vw;
+				margin-right: 6vw;
 			}
 		}
 	}

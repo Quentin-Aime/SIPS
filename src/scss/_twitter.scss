@@ -1,22 +1,114 @@
 .twitter {
 	display: flex;
 	align-items: center;
+	@include for-size(tablet-landscape-up) {		
+		align-items: flex-end;
+	}
+	@include for-size(desktop-up) {		
+		margin-top: 50px;
+	}
 	flex-direction:	column;
-	&-Picture {
-		height: 50px;
-		width: 50px;
+	&-Decoration {
+		position: relative; 	
 		padding: 50px 0 50px 0;
+		@include for-size(tablet-landscape-up) {
+			width: 100%;			
+		}
+		@include for-size(desktop-up) {
+			padding-top: 300px;
+		}
+		&-Picture {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			top: 25%;
+			margin-left: -15px;
+			@include for-size(tablet-landscape-up) {
+				z-index: 2;
+				top: 11vw;
+				left: 12%;
+				width: 10%;
+				left: 10%;
+				top: 6vw;
+			}
+			@include for-size(desktop-up) {
+				left: 10%;
+				top: 7vw;
+			}
+		}
+		&-Square {
+			display: none;
+			@include for-size(tablet-landscape-up) {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				top: 8vw;
+				left: 14%;
+				width: 60%;
+			}
+		}
+		&-Line {
+			display: none;
+			@include for-size(tablet-landscape-up) {
+				position: absolute;
+				display: block;
+				z-index: 2; 
+				width: 5%;
+				left: 30vw;
+				top: 5vw;
+			}
+			@include for-size(desktop-up) {
+				left: 30vw;
+				top: 5vw;
+			}
+		}
+		&-Line2 {
+			display: none;
+			@include for-size(tablet-landscape-up) {
+				z-index: 2; 
+				position: absolute;
+				width: 10%;
+				display: block;
+				left: 25vw;
+				top: 2vw;
+			}
+			@include for-size(desktop-up) {
+				left: 25vw;
+				top: 2vw;
+			}
+		}
 	}
 	&-Wrapper {
 		width: 85vw;
 		margin-bottom: 50px;
 		background-color: white;
 		box-shadow: 22px 22px 150px rgba(0, 0, 0, 0.28);
+		@include for-size(tablet-landscape-up) {
+			z-index: 4;
+			width: 50vw;
+			margin-top: -5vw;
+			margin-bottom: 8vw;
+			height: 15vw;
+			margin-right: 10vw;
+		}
+		@include for-size(desktop-up) {
+			margin-right: 5vw;
+			margin-top: -5vw;
+			margin-bottom: 7vw;
+			height: 13vw;		
+		}
 		&-Head {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			padding: 30px;
+			@include for-size(tablet-landscape-up) {
+				padding-top: 2vw; 
+				padding-bottom: 15px;
+			}
+			@include for-size(desktop-up) {
+				padding-top: 3vw;
+			}
 			&-Img {
 				height: 45px;
 				width: 45px;
@@ -39,7 +131,18 @@
 			padding: 0 15vw 40px 18vw;
 			font-family: 'Montserrat Regular', sans-serif;
 			font-size: 15px;
+			@include for-size(tablet-landscape-up) {
+				padding: 1vw 5vw 40px 5vw;
+			}
+			@include for-size(desktop-up) {
+				padding-top: 2vw;
+			}
 		}
 	}
 }
 
+.oneworld {
+	@include for-size(tablet-landscape-up) {
+		margin-right: 20vw;
+	}
+}
