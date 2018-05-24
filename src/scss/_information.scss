@@ -14,7 +14,10 @@
 		display: flex;
 		justify-content: space-between;
 		&-Item {
-			padding: 45px 5vw 25px 5vw;
+			padding: 45px 3vw 25px 3vw;
+			@include for-size(tablet-landscape-up) {
+				padding: 45px 5vw 25px 5vw;
+			}
 			color: #B39F64;
 			font-family: "Montserrat Regular", sans serif;
 			&-Number {
