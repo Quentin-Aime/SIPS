@@ -94,11 +94,10 @@
 			}
 			display: none;
 			font-family: 'Montserrat SemiBold', sans-serif;
-			color: #B29E63;
+			color: white;
 			padding-left: 5vw;
 			padding-top: 5vh;
 			font-size: 15px;
-			color: #B29E63;
 			@include for-size(tablet-portrait-up) {
 				display: block;
 				color: white;
@@ -106,6 +105,7 @@
 				&:first-child {
 					padding-top: 5vh;
 				}
+				padding-left: 0;
 				margin-right: 4vw;
 			}
 			@include for-size(tablet-landscape-up) {
@@ -116,7 +116,11 @@
 					margin-left: 3vw;
 				}
 				padding-left: 0;
-				margin-right: 8vw;
+				margin-right: 6vw;
+			}
+			&-Link {
+				text-decoration: none;
+				color: white;
 			}
 		}
 	}

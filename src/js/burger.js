@@ -7,6 +7,7 @@ elBurger.addEventListener('click', function() {
 	if (elHeaderMenu.style.marginTop === "") {
 		for (let i = 0; i < elHeaderMenuList.length; i++){
 			elHeaderMenuList[i].style.display = "block";
+			console.log(elHeaderMenuList[i])
 		}
 		elHeaderMenu.style.marginTop = "0";
 	}

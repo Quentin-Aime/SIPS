@@ -1,17 +1,9 @@
 
 ## Installation
 
-Clone the repository
-
+Go into the folder /dist and run the next prompt :
 ~~~
-git clone https://github.com/Quentin-Aime/SIPS.git
-~~~
-
-Install dependencies and run the start script (parcel)
-
-~~~
-$ npm install
-$ npm start OR parcel index.html
+$ php -S localhost:8000
 ~~~
 
-Open the project url `http://localhost:1234/`
+Open the project url `http://localhost:8000/`

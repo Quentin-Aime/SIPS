@@ -41,7 +41,7 @@
 		top: 75%;
 		left: 5%;
 		@include for-size(tablet-portrait-up) {
-			left: 40%; 
+			left: 40%;
 		}
 		@include for-size(desktop-up) {
 			left: 60%;
